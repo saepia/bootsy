@@ -1,5 +1,7 @@
 module Bootsy
   class Image < ActiveRecord::Base
+    attr_accessible :image_file
+
     belongs_to :image_gallery, touch: true
 
     mount_uploader :image_file, ImageUploader

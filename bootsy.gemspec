@@ -3,13 +3,13 @@ $:.push File.expand_path('../lib', __FILE__)
 require 'bootsy/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'bootsy'
+  s.name        = 'bootsy-rails3'
   s.version     = Bootsy::VERSION
-  s.authors     = ['Volmer Soares']
-  s.email       = ['volmerius@gmail.com']
+  s.authors     = ['Volmer Soares', 'Marcin Lewandowski']
+  s.email       = ['volmerius@gmail.com', 'marcin@saepia.net']
   s.homepage    = 'http://github.com/volmer/bootsy'
-  s.summary     = 'A beautiful WYSIWYG editor with image uploads for Rails.'
-  s.description = 'A beautiful WYSIWYG editor with image uploads for Rails.'
+  s.summary     = 'A beautiful WYSIWYG editor with image uploads for Rails (backported to Rails 3).'
+  s.description = 'A beautiful WYSIWYG editor with image uploads for Rails (backported to Rails 3).'
   s.license     = 'MIT'
 
   s.files = Dir['{app,config,db,lib}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.md']

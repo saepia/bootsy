@@ -72,8 +72,9 @@ module Bootsy
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+    # FIXME RoR3 hack
     def image_params
-      params.require(:image).permit(:image_file)
+      params[:image]
     end
   end
 end
